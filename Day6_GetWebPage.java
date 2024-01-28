@@ -12,7 +12,7 @@ public class Day6_GetWebPage {
         WebDriver driver = new ChromeDriver();
 
         //Setting webPage as a string variable
-        String webPage="https://www.linkedin.com/login/";
+        String webPage="https://www.github.com/login/";
 
         // Using driver.get() to navigate to the first URL
         driver.get(webPage);
