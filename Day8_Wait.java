@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day8_Locators1 {
+public class Day8_Wait {
     public static void main(String[] args) {
         // Set the path to your ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
