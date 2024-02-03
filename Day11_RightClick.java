@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day9_PlayingWithTextBox {
+public class Day10_RightClick {
     public static void main(String[] args) {
         // Set the path to your ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
@@ -14,23 +14,18 @@ public class Day9_PlayingWithTextBox {
         WebDriver driver = new ChromeDriver();
 
         // Navigate to a website
-        driver.get("https://www.github.com/login/");
+        driver.get("https://artoftesting.com/samplesiteforselenium");
 
-        //Locators Exploration on Linkedin Login Page  id=""
-        WebElement userName= driver.findElement(By.id("login_field"));
-        
-        //  typing username in textbox
-        userName.sendKeys("Github@test.com");
-
-        WebElement password = driver.findElement(By.name("password"));
-        password.sendKeys("test@123.com");
-
-        // Clear password from textbox
-        driver.findElement(By.name("password")).clear();
+	    //Right click in the TextBox
+		Actions action = new Actions(driver);
+		WebElement searchBox = driver.findElement(By.id("fname"));
+		action.contextClick(searchBox).perform();
+		
+		//Thread.sleep just for user to notice the event
+		Thread.sleep(3000);
 
         //Closing the driver instance
 		driver.quit();
 
-
-    }
+   }
 }

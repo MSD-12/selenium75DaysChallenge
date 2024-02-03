@@ -25,5 +25,8 @@ public class Day10_HandlingDropDown {
         // Selecting using visible text in dropdown
         dropdown.selectByVisibleText("SAP Learning Hub");
 
+        //Closing the driver instance
+		driver.quit();
+
    }
 }

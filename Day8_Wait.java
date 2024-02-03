@@ -24,5 +24,9 @@ public class Day8_Wait {
         WebElement userName= driver.findElement(By.id("login_field"));
         WebElement password = driver.findElement(By.name("password"));
         WebElement joinNow = driver.findElement(By.className("mt-1 mb-0 p-0"));
+
+        //Closing the driver instance
+		driver.quit();
+
     }
 }
