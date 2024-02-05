@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day11_RightClick {
+public class Day12_RightClick {
     public static void main(String[] args) {
         // Set the path to your ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
@@ -15,15 +15,16 @@ public class Day11_RightClick {
 
         // Navigate to a website
         driver.get("https://artoftesting.com/samplesiteforselenium");
+        driver.manage().window().maximize();
 
-	    //Right click in the TextBox
+		//Double click the button to launch an alertbox
 		Actions action = new Actions(driver);
-		WebElement searchBox = driver.findElement(By.id("fname"));
-		action.contextClick(searchBox).perform();
+		WebElement btn = driver.findElement(By.id("dblClkBtn"));
+		action.doubleClick(btn).perform();
 		
 		//Thread.sleep just for user to notice the event
 		Thread.sleep(3000);
-
+		
         //Closing the driver instance
 		driver.quit();
 
