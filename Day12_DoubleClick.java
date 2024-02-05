@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day12_RightClick {
+public class Day12_DoubleClick {
     public static void main(String[] args) {
         // Set the path to your ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
