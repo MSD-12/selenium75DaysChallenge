@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day13_MouseHover {
+public class Day14_DragAndDrop {
     public static void main(String[] args) {
         // Set the path to your ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
@@ -14,7 +14,7 @@ public class Day13_MouseHover {
         WebDriver driver = new ChromeDriver();
 
         // Navigate to a website
-        driver.get("https://github.com");
+        driver.get("https://jqueryui.com/droppable/");
         driver.manage().window().maximize();
 
 		//Mouseover on submit button
